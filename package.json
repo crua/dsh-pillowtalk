@@ -1,0 +1,42 @@
+{
+  "name": "dsh-pillowtalk",
+  "version": "1.0.0",
+  "description": "枕边话：给 DSH 里的她一个只属于你们的夜间频道。加载参考小说做语料，按「温度」在夜里随机主动说点让人心动的话；日常藏起来，不打扰。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "persona",
+    "intimacy",
+    "night",
+    "corpus"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "tools",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "author": "Vero",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crua/dsh-pillowtalk.git"
+  },
+  "license": "MIT"
+}
